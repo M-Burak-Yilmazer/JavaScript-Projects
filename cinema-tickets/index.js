@@ -52,6 +52,21 @@ function saveToLocalStorage(indexs) {
   localStorage.setItem("selectedMovieIndex", select.selectedIndex);
 }
 
-
 //? Get Data From LOCAL Storage
-function getFromLocalStorage() {}
+function getFromLocalStorage() {
+  const selectedSeats = JSON.parse(localStorage.getItem("selectedSeats"));
+  if (selectedSeats != null && selectedSeats.length > 0) {
+    seats.forEach((seat, index) => {
+      if (selectedSeats.indexOf(index) > -1) {
+        seat.classList.add("selected");
+      }
+    });
+  }
+
+  const selectedMovieIndex = JSON.parse(
+    localStorage.getItem("selectedMovieIndex")
+  );
+  if (selectedMovieIndex != null) {
+    select.selectedIndex = selectedMovieIndex;
+  }
+}
