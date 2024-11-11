@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+body {
+  background: #292929;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.seat {
+  background: #444451;
+  height: 15px;
+  width: 15px;
+  margin: 3px;
+  border-radius: 5px;
+  border: 0.5px solid #ffd900f1;
+}
+.row {
+  display: flex;
+}
