@@ -4,7 +4,7 @@
   padding: 0;
 }
 body {
-  background: #292929;
+  background: #942929;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -63,13 +63,14 @@ body {
 .info {
   background-color: rgba(0, 0, 0, 0.2);
   padding: 5px 10px;
-  color: #777;
+  color: #f5ecec;
   display: flex;
   margin-bottom: 20px;
 }
 .info li {
   display: flex;
   align-items: center;
+  gap:5px;
   justify-content: center;
   margin: 0 10px;
 }
